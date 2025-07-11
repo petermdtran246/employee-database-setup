@@ -5,7 +5,6 @@ CREATE TABLE employment_status (
 );
 
 
-
 CREATE TABLE employees (
   employee_id INT PRIMARY KEY AUTO_INCREMENT,
   first_name VARCHAR(100) NOT NULL,
@@ -15,7 +14,6 @@ CREATE TABLE employees (
   status_ID INT,
   FOREIGN KEY (status_ID) REFERENCES employment_status (status_ID)
 );
-
 
 
 INSERT INTO employment_status (status_name)
